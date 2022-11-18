@@ -16,7 +16,7 @@ Now about parameters:
 ```lua
 --[[
 size: {{x_from, x_to}, {y_from, y_to}} -- size of the graph
-marks_step: 0-inf                            -- step of marks iterator
+marks_step: 0-inf                      -- step of marks iterator
 graph_step: 0-inf                      -- graph iteration step
 marks: true-false                      -- shows marks on every marks step iterator
 graph_color: colors.(color)            -- color of graph line.
