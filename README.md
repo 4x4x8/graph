@@ -7,7 +7,7 @@ First you need to create folder and place Graph with [pxl](https://github.com/4x
 
 and just create new Graph object.
 ```lua
--- size, step, graph_step, marks, graph_color, color, background, monitor
+-- size, marks_step, graph_step, marks, graph_color, color, background, monitor
 local lib = require "graph"
 local graph = lib.new({{-50, 50},{-50,50}}, 10, 3, true, colors.blue, colors.white, colors.black, term)
 ```
@@ -16,7 +16,7 @@ Now about parameters:
 ```lua
 --[[
 size: {{x_from, x_to}, {y_from, y_to}} -- size of the graph
-step: 0-inf                            -- step of marks iterator
+marks_step: 0-inf                            -- step of marks iterator
 graph_step: 0-inf                      -- graph iteration step
 marks: true-false                      -- shows marks on every marks step iterator
 graph_color: colors.(color)            -- color of graph line.
