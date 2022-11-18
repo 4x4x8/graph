@@ -6,14 +6,14 @@ First you need to create folder and place Graph with [pxl](https://github.com/4x
 
 
 and just create new Graph object.
-```
+```lua
 -- size, step, graph_step, marks, graph_color, color, background, monitor
 local lib = require "graph"
 local graph = lib.new({{-50, 50},{-50,50}}, 10, 3, true, colors.blue, colors.white, colors.black, term)
 ```
 
 Now about parameters:
-```
+```lua
 --[[
 size: {{x_from, x_to}, {y_from, y_to}} -- size of the graph
 step: 0-inf                            -- step of marks iterator
@@ -27,7 +27,7 @@ monitor:     (cc monitor)              -- monitor where we display graphic.
 ```
 
 Then we give it a function:
-```
+```lua
 graph:process(function(x) return x^2 end)
 ```
 and then just render:
